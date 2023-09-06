@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs")  %>
+<main>
+    <div class="container">
+        <div class="heading">
+            <%= heading  %>
+        </div>
+            <form action="/work" method="post" class="item">
+                <input type="text" name="newItem" placeholder="New Item" class="new-Item" required>
+                <input type="submit" value="+" class="submit-btn">
+            </form>
+        <div class="box">
+            <% for(var count=0; count<todoListItmes.length; count++ ){ %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p> <%= todoListItmes[count] %> </p>
+                </div>
+            <%} %>
+        </div>
+    </div>
+</main>
+<%- include("partials/footer.ejs")  %>

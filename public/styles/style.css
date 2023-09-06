@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #dcd6f7;
+  font-family: "Titillium Web", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.navbar-brand{
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 20px 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #F4EEFF;
+  padding: 0;
+}
+
+.box {
+  overflow: auto;
+  height: 65%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.heading {
+  background-color: #424874;
+  color: #fff;
+  margin: 0;
+  width: 400px;
+  border-radius: 20px 20px 0 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+form {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 50px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  width: 50px;
+  height: 50px;
+  background-color: #424874;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.item p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  margin: 0 25%;
+  }
